@@ -17,3 +17,7 @@ test_data = iris.data[test_idx]     #    "    for testing
 #create a classifier
 clf = tree.DecisionTreeClassifier()
 clf.fit(train_data, train_target)
+
+print(test_target) #expected label
+print(clf.predict(test_data)) #predicted label. (these two should match)
+
